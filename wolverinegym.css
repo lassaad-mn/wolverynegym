@@ -1,0 +1,1386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+font-family:"poppins", sans-serif;
+font-weight: bold;
+margin: 0;
+padding: 0;
+list-style: none;
+text-decoration: none;
+box-sizing: border-box;
+
+
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+ background-color:black;
+ margin-bottom: 30px;
+}
+
+
+
+
+/* header coding  */
+.headerr{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  text-align: center;
+  align-items: center;
+  color: white;
+
+
+}
+.headerr .gym-logo{
+ 
+  padding: 0px;
+  width: 65px;
+  height: 65px;
+  border: solid black 3px;
+  border-radius: 50%;
+  transition: 0.5s;
+
+
+}
+.headerr .gym-logo:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 30px gold;
+}
+.headerr .navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  
+}
+.headerr .navbar a{
+  font-size: 1.3rem;
+  color: white;
+  text-transform: capitalize;
+  transition: 1s;
+}
+.headerr .navbar a :hover{
+  
+  color: gold;
+
+}
+.headerr .icon-sm{
+  display: flex;
+  width: 200px;
+ 
+ gap: 20px;
+}
+.fa-facebook{
+  font-size: 30px;
+  color: black;
+}
+.fa-instagram{
+  font-size: 30px;
+  color: black;;
+}
+.fa-phone{
+ font-size: 30px;
+  color: black;
+}
+.headerr .icon-sm a {
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  height: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  box-shadow:0  5px 10px black;
+  place-items: center;
+
+  
+  
+  
+}
+.headerr .icon-sm a:hover{
+  background-color: var(--accent-color);
+  color: white;
+ 
+
+}
+.headerr .icon-sm i:hover{
+  color: white;
+}
+.headerr .icon-sm a::before{
+  content: attr(data);
+  background-color: var(--accent-color);
+  position: absolute;
+  color: white;
+  padding: 10px;
+  border-radius: 100px;
+  transform: translate(-37%, -35px) rotate(25deg );
+  opacity: 0;
+  transition: all 0.1s cubic-bezier(0,-0.16, 0.95, 1.36);
+  box-shadow: 0 0 10px black;
+  
+
+
+
+
+
+
+
+
+
+}
+.icon-sm a::after{
+    content: '';
+    position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-top: 10px solid var(--accent-color);
+      transform: translate(0, 0)rotate(25deg);
+      opacity: 0;
+        transition: all 0.1s cubic-bezier(0,-0.16, 0.95, 1.36);
+
+}
+.headerr .icon-sm a:hover::before{
+   transform: translate(-37%, -55px) rotate(0 );
+   opacity: 1;
+}
+.headerr .icon-sm a:hover::after{
+   transform: translate(-125%, -19px) rotate(0);
+   opacity: 1 ;
+}
+/* home  coding  */
+#home{
+  width: 80%;
+  margin: auto;
+  height: 300px;
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+  margin-top:30px ;
+  color: white;
+   
+  
+ 
+
+}
+#home h3 span{
+ font-family: system-ui,sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 0 0 10px gold;
+  text-transform: uppercase;
+  
+  
+  
+  font-size: 3rem;
+}
+#home .text{
+
+font-size: 1.2rem;
+font-weight: 900;
+width:  700px;
+height: 350px;
+padding: 30px;
+position: relative;
+top: 50px;
+text-transform: capitalize;
+border-radius: 10%;
+font-style: italic;
+line-height: 30px;
+letter-spacing: 1px;
+
+
+
+
+
+}
+
+#home .text .span1{
+  color: gold ;
+  font-style: italic;
+  cursor: pointer;
+  
+}
+
+#home .img-home{
+  height:370px;
+  box-sizing: border-box;
+  border-radius: 10%;
+  border: solid 3px black;
+  transition: 0.3s;
+  
+}
+#home .img-home:hover{
+
+  border: solid 3px white;
+    box-shadow: 0 0 10px gold;
+  transform: scale(1.1);
+}
+.P2{
+  width: 100%;
+
+  padding: 5px;
+  height: 30px;
+  margin-top: 15px;
+  letter-spacing: 0;
+
+  
+
+}
+.P2 i{
+  background-color: white;
+  width: auto;
+  height:auto;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 10px black;
+  box-sizing: border-box;
+  transition:  all 0.1s ease-in;
+}
+.P2 span{
+  font-size: 1.5rem;
+  font-size: larger;
+color: gold;
+border-right: 3px solid black ; margin-right: 7px;
+
+
+}
+.P2 i:hover{
+  background-color: var(--accent-color);
+  color: white;
+  transform: translateY(-10px);
+
+
+}
+/* services    coding  */
+#category{
+  width: 80%;
+  margin: auto;
+  margin-top: 110px;
+  margin-bottom: 100px;
+ 
+  height: 300px;
+  padding: 15px;
+   animation: textanim both;
+  animation-timeline:view() ;
+  animation-range: entry 20% cover 100vh;
+}
+#category h2{
+  text-align: center;
+  color: gold;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+
+
+}
+
+.category-main{
+  display: flex;
+  gap: 25px;
+  width: 100%;
+
+
+
+
+
+}
+
+
+.category-main  .mainnn{
+  width: 350px;
+  height: 250px;
+  background-color: #2a272a;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+  text-transform: capitalize;
+
+
+}
+.category-main  .mainnn:hover{
+  transform: scale(1.1);
+  box-shadow:  0 0 7px gold;
+}
+
+#category .category-main img{
+  width: 55px;
+  margin: auto;
+  height: 55px;
+  border-radius: 100PX;
+  position: relative;
+  left: 37%;
+  border: solid 5px black;
+  transition: ease-in-out 0.3s;
+  
+
+}
+#category .category-main img:hover{
+  box-shadow: 0 0 10px gold;
+  transform: scale(1.1);
+}
+#category .pt{
+  text-align: center;
+  color: white;
+  
+}
+#category .main{
+  width: 100%;
+  height: 70%;
+  margin: 17px 0 ;
+
+}
+#category .mainp{
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+  color: white  ;
+  font-size:0.9rem;
+
+}
+#category .a1 {
+  position: relative;
+  left: 23%;
+ top: 19px;
+ background-color: transparent;
+ border-radius: 30px;
+ padding: 10px;
+ color: white;
+ background-color: black;
+transition: 0.3s;}
+#category .a1:hover{
+  border: solid 3px gold;
+  background-color: gold;
+  color: black;
+}
+.takewando .a1{
+  left: 25%;
+}
+.kickboxing .a1{
+  left: 25%;
+}
+.category-info
+{
+  margin: 100px 0 ;
+  width:100%;
+  
+
+
+}
+.category-info span {
+  color: gold;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+#muscle-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  
+  color: white;
+}
+.imginfo1{
+  position: relative;
+
+}
+.imginfo1::before{
+  content: '◢';
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform:translateX(-50%);
+  font-size: 40rem;
+  font-weight: 400;
+  line-height: 20rem;
+  color: gold;
+  text-shadow: 0 0 10px gold;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+  
+}
+
+.category-info .infom{
+  width: 450px;
+  line-height: 39px;
+  font-family: system-ui,sans-serif;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.category-info .infom .span2{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px gold;
+  text-shadow: 0 0 10px gold;
+  text-transform: uppercase;
+  font-size: 2.5rem ;
+}
+.category-info .infom .span1{
+  color:  gold;
+  text-transform: capitalize;
+  font-size:  1.29rem; ;
+}
+.category-info .infom .a2 i {
+  margin: 10px 0 ;
+  color: gold;
+  width: 150px;
+  padding: 5px;
+  border-radius: 100px;
+  font-size: 1.7rem;
+  transition: 0.1s ease-in;
+  text-align: center;
+  border: solid 3px gold ;
+
+
+}
+.category-info .infom .a2 i:hover{
+  transform: translateY(-30%);
+  background-color: gold;
+  color: black;
+  box-shadow: 0 0 7px white;
+}
+#takewando-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.imginfo2{
+  position: relative;
+}
+.imginfo2 img{
+  position: relative;
+  top: -61px;
+}
+.imginfo2::before{
+  content: '◢';
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform:translateX(-50%);
+  font-size: 35rem;
+  font-weight: 400;
+  line-height: 20rem;
+  color: gold;
+  text-shadow: 0 0 10px gold;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+  
+}
+#takewando-info .infom{
+  color: white;
+}
+#kickboxing-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+}
+#kickboxing-info .infom{
+  color: white;
+}
+#kickboxing-info img{
+  position: relative;
+  top: -24px;
+}
+.category-info2{
+  display: none;
+}
+/*price coding*/
+#price{
+  margin-top: 50px;
+}
+
+.our-price{
+  margin-top: 30px;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.our-price div {
+width: 330px;
+height: 400px;
+background-color: #2a272a;
+margin-bottom: 30px;
+border-radius: 30px;
+transition: ease-in-out 0.3s;
+}
+.our-price div:hover{
+  transform: scale(1.1);
+  border: solid 3px gold;
+}
+.our-price .price-3mois{
+  height: 430px;
+  position: relative;
+  top: -10px;
+ 
+  box-shadow: 0 0 10px  gold;
+}
+.our-price  img{
+  position: relative;
+  width: 75px;
+  margin: auto;
+  height: 75px ;
+  border-radius: 100PX;
+  left: 39%;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.our-price h3 {
+  text-align: center;
+  font-family: cursive;
+
+
+}
+.our-price .h3-s{
+  color: gold;
+}
+.our-price  img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 7px gold;
+}
+.our-price li {
+  
+font-family: system-ui,sans-serif;
+  font-size: 1.3rem;
+  position: relative;
+  left: 30%;
+  color: white;
+  margin-top: 10PX;
+  text-transform: capitalize;
+
+}
+.our-price i {
+  color: green;
+  text-shadow: 0  0 5px green;
+}
+.price-3mois i{
+  color: gold;
+}
+.our-price button{
+  margin-top: 10px;
+  width: 300px;
+  height: 29px;
+  position: relative;
+  left: 15px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: gold;
+  background-color: black;
+  transition: 0.3s;
+
+}
+.our-price button:hover{
+  transform: scale(1.09);
+}
+.fadein{
+animation: fadein 5s linear both;
+animation-timeline: view();
+animation-range: entry 0%;
+
+}
+@keyframes fadein{
+  from
+  {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.fadeleft{
+  animation: fadeleft 3s linear both;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+@keyframes fadeleft{
+  from{
+    transform: translateX(-300px);
+    opacity: 0;
+    
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+    
+  }
+}
+.faderight{
+ animation: faderight 3s linear both;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+@keyframes faderight{
+  from{
+    transform: translateX(50px);
+    opacity: 0;
+    
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+    
+  }
+}
+
+/*contactus coding*/
+
+#contactus{
+  margin-top: 100px;
+  color: white;
+  margin-bottom: 100px;
+  animation: fadein 5s linear both;
+animation-timeline: view();
+animation-range: entry 0%;
+  
+}
+.cntct-main{
+  display: flex;
+  justify-content: space-between;
+  background-color: #2a272a;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  
+  
+}
+.cntct-main input{
+  display: block;
+  width: 550px;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 1s;
+  color: white;
+  background-color: gold;
+}
+.cntct-main input:focus{
+  width: 600px;
+  background-color: gold;
+  color: black;
+
+}
+.cntct-main input:focus::placeholder{
+  color: black;
+}
+.cntct-main h3{
+  text-align: center;
+  color: gold;
+  font-size: 1.3rem;
+  font-family: cursive;
+}
+.cntct-main button{
+  display: block;
+  width: 570px;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 1s;
+  color: black;
+  transition: 0.3s;
+}
+.cntct-main button:hover{
+  transform: scale(1.1);
+  background-color: gold;
+}
+
+.cntct-main ul{
+  list-style: none;
+ 
+}
+.cntct-main i{
+  color: gold;
+  font-size: small;
+  margin-right: 10px;
+}
+.cntct-main .fa-instagram{
+color: purple;
+}
+.cntct-main .fa-phone{
+  color: green;
+}
+.cntct-main .li1{
+  font-size: 1.3rem;
+  text-align: center;
+  color: gold;
+}
+.cntct-main ul{
+  position: relative;
+  left: 100px;
+}
+.cntct-main li  {
+  margin-top: 23px;
+}
+.footer{
+  animation: fadein 5s linear both;
+animation-timeline: view();
+animation-range: entry 0%;
+margin-bottom: 10px;
+padding-bottom: 30px;
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: #2a272a;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+}
+footer i{
+  color: purple;
+}
+.footer .ps{
+  color: white;
+  text-align: center;
+}
+.footer .lis{
+  text-align: center;
+  color: gold;
+  font-size: 1.3rem;
+ 
+}
+
+.footer a{
+  color: white;
+}
+.footer a:hover {
+  text-decoration: underline gold;
+  color: gold;
+}
+.footer .li{
+  position: relative;
+  top: -27px;
+}
+.footer span{
+  color: gold;
+}
+@media (max-width:768px)
+{
+  *{
+     font-family: "poppins",sans-serif;
+  }
+    .fadeleft{
+  animation:  3s linear both;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+@keyframes fadeleft{
+  from{
+    transform: translateX(-300px);
+    opacity: 0;
+    
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+    
+  }
+}
+.faderight{
+ animation:  3s linear both;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+@keyframes faderight{
+  from{
+    transform: translateX(50px);
+    opacity: 0;
+    
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+    
+  }
+}
+.headerr{
+  width: 90%;
+  height: auto;
+  padding: 20px 0;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+}
+.headerr .gym-logo{
+  width:100px;
+  height: 100px;
+}
+.headerr .navbar{
+  width: 70%;
+
+}
+.headerr .icon-sm{
+  justify-content: space-between;
+}
+#home{
+  width: 90%;
+  flex-direction: column;
+  height: auto;
+}
+#home .text{
+  width: 100%;
+  padding: 20px ;
+  margin-bottom: 10%;
+}
+.category-main{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.category-main .main{
+  width: 45%;
+  margin-bottom: 20%;
+}
+#category{
+  width: 90%;
+  height: auto;
+}
+#category .category-main img{
+  left: 42.5%;
+}
+#category .a1{
+  left:33%;
+}
+.category-info{
+  display: none;
+}
+.category-info2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#muscle-info  .infom{
+  width:100% ;
+  padding: 20px 0 ;
+  text-align: center;
+   font-family: "Roboto", sans-serif;
+}
+#takewando-info  .infom{
+  width:100% ;
+  padding: 20px 0 ;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+#kickboxing-info  .infom{
+  width:100% ;
+  padding: 20px 0 ;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.imginfo1,.imginfo2{
+ padding: 0 70px;
+}
+
+#muscle-info,#takewando-info,#kickboxing-info{
+flex-wrap: wrap;
+justify-content: center;
+margin-bottom: 17%;
+
+}
+.our-price{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.our-price div{
+  width: 45%;
+  margin: 20px;
+  margin-bottom: 10%;
+}
+.our-price li{
+  width: 100%; padding: 0 20px;
+  left: 10%;
+  font-family: "Roboto", sans-serif;
+  
+}
+.our-price button{
+width: 90%;
+}
+.our-price .price-mois h3{
+   font-family: "Roboto", sans-serif;
+}
+.our-price .price-3mois h3{
+   font-family: "Roboto", sans-serif;
+}
+.our-price .price-1year h3{
+   font-family: "Roboto", sans-serif;
+}
+
+}
+@media(max-width:670px){
+   .our-price div {
+    width: 100%;
+  }
+  #contactus .sendmess{
+    width: 100%;
+  }
+  #contactus .sendmess input, #contactus .sendmess button {
+    width: 95%;
+  }
+  #contactus table .tr2{
+    position: relative;
+    left: 1px;
+  }
+  #muscle-info .imginfo1::before{
+content: '';
+    
+  }
+    #muscle-info .imginfo1 img{
+    position: relative;
+    top: 90px;
+   border: 3px solid yellow;
+    border-radius:  500px;
+    box-shadow: 0 0 10px whitesmoke;
+    padding: 10px;
+    
+
+
+  }
+  #takewando-info .imginfo2::before{
+   content: '';
+    
+  }
+   #takewando-info .imginfo2 img{
+    position: relative;
+    top: 10px;
+    border: 3px solid yellow;
+    border-radius: 500px;
+    box-shadow: 0 0 10px whitesmoke;
+    padding: 10px;
+  }
+   #kickboxing-info .imginfo1::before{
+    content: '';
+    
+  }
+    #kickboxing-info .imginfo1 img{
+    position: relative;
+    top: 79px;
+    border: 3px solid yellow;
+    border-radius:  500px;
+    box-shadow: 0 0 10px whitesmoke;
+    padding: 10px;
+  }
+  .our-price .price-mois h3{
+   font-family: "Roboto", sans-serif;
+}
+.our-price .price-3mois h3{
+   font-family: "Roboto", sans-serif;
+}
+.our-price .price-1year h3{
+   font-family: "Roboto", sans-serif;
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media  (max-width:480px){
+  *{
+     font-family: "poppins",sans-serif;
+  }
+  .fadeleft{
+  animation:  3s linear both;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+@keyframes fadeleft{
+  from{
+    transform: translateX(-300px);
+    opacity: 0;
+    
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+    
+  }
+}
+.faderight{
+ animation:  3s linear both;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+@keyframes faderight{
+  from{
+    transform: translateX(50px);
+    opacity: 0;
+    
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+    
+  }
+}
+ .headerr{
+ width: 90%;
+ flex-direction: column;
+ justify-content: center;
+ padding: 15px 0 ;
+
+ }
+ .headerr .gym-logo{
+  width: 100px;
+  height:100px  ;
+ }
+ .headerr .navbar{
+  gap: 10px;
+  width: 100%;
+ }
+ .headerr .icon-sm{
+  justify-content: space-between;
+}
+ #home .text{
+  width: 100%;
+  padding: 13px 0 ;
+  margin-bottom: 59%;
+ }
+ 
+
+ 
+  .category-info{
+    display: none;
+  
+  }
+  #muscle-info,#takewando-info,#kickboxing-info{
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0 ;
+    margin-bottom: 35%;
+  }
+  #muscle-info .infom{
+    font-family: "Roboto", sans-serif;
+  }
+
+  #muscle-info .imginfo1::before{
+content: '';
+    
+  }
+  #muscle-info .imginfo1 img{
+    position: relative;
+    top: 90px;
+   border: 3px solid yellow;
+    border-radius:  500px;
+    box-shadow: 0 0 10px whitesmoke;
+    padding: 10px;
+    
+
+
+  }
+   #takewando-info .imginfo2::before{
+   content: '';
+    
+  }
+   #takewando-info .infom{
+    font-family: "Roboto", sans-serif;
+  }
+  #takewando-info .imginfo2 img{
+    position: relative;
+    top: 10px;
+    border: 3px solid yellow;
+    border-radius: 500px;
+    box-shadow: 0 0 10px whitesmoke;
+    padding: 10px;
+  }
+   #kickboxing-info .imginfo1::before{
+    content: '';
+    
+  }
+   #kickboxing-info .infom{
+    font-family: "Roboto", sans-serif;
+  }
+  #kickboxing-info .imginfo1 img{
+    position: relative;
+    top: 79px;
+    border: 3px solid yellow;
+    border-radius:  500px;
+    box-shadow: 0 0 10px whitesmoke;
+    padding: 10px;
+  }
+
+  .our-price div {
+    width: 100%;
+  }
+  #contactus .sendmess{
+    width: 100%;
+  }
+  #contactus .sendmess input, #contactus .sendmess button {
+    width: 95%;
+  }
+  #contactus table .tr2{
+    position: relative;
+    left: 1px;
+    text-transform: capitalize;
+  }
+  footer{
+    flex-direction: column;
+    justify-content: center;
+   
+   
+  }
+  .footer .ul2 {
+    display: flex;
+    width: 100%;
+  
+    gap: 10px;
+  }
+.contactus,.quiclincks,.followus{
+ margin: 15% 0 ;
+}
+
+
+  
+
+
+.our-price .price-mois h3{
+   font-family: "Roboto", sans-serif;
+}
+.our-price .price-3mois h3{
+   font-family: "Roboto", sans-serif;
+}
+.our-price .price-1year h3{
+   font-family: "Roboto", sans-serif;
+} 
+
+ 
+  
+}
+@media (max-width:320px){
+ *{
+  font-family: "poppins",sans-serif;
+ }
+  .headerr .navbar a {
+    font-size: 16px;
+
+  }
+  .headerr .icon-sm{
+  justify-content: space-between;
+}
+  #home h3 span{
+    font-size: 20px;
+  }
+  #home .text{
+    margin-bottom: 100%;
+  }
+  #category .category-main img{
+    left: 39%;
+  }
+  #category .a1{
+  left: 27%;
+}
+ #muscle-info .infom{
+    font-family: "Roboto", sans-serif;
+  }
+   #takewando-info .infom{
+    font-family: "Roboto", sans-serif;
+  }
+   #kickboxing-info .infom{
+    font-family: "Roboto", sans-serif;
+  }
+   .footer .ul2 {
+    display: inline-block;
+    width: 100%;
+  
+  
+  }
+  
+.our-price div{
+width: 100%;
+}
+.our-price .price-mois h3{
+   font-family: "Roboto", sans-serif;
+}
+.our-price .price-3mois h3{
+   font-family: "Roboto", sans-serif;
+}
+.our-price .price-1year h3{
+   font-family: "Roboto", sans-serif;
+}
+}
+table{
+  width: 100%;
+
+  text-align: center;
+}
+.th1{
+  font-size: 1.3rem;
+  color: yellow;
+  text-shadow: 0 0 7px gold;
+  text-align: center;
+  padding-left: 20%;
+}
+.cntct-main{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.ps span{
+  color: purple;
+  font-size: 1.3rem;
+}
+.tr2{
+position: relative;
+left: -70px;
+}
+.category-info2
+{
+  margin: 100px 0 ;
+  width:100%;
+  
+
+
+}
+.category-info2 span {
+  color: gold;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+#muscle-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  
+  color: white;
+}
+.imginfo1{
+  position: relative;
+
+}
+.imginfo1::before{
+  content: '◢';
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform:translateX(-50%);
+  font-size: 40rem;
+  font-weight: 400;
+  line-height: 20rem;
+  color: gold;
+  text-shadow: 0 0 10px gold;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+  
+}
+
+.category-info2 .infom{
+  width: 450px;
+  line-height: 39px;
+  font-family: cursive;
+  font-size: 1.3rem;
+}
+.category-info2 .infom .span2{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px gold;
+  text-shadow: 0 0 10px gold;
+  text-transform: uppercase;
+  font-size: 2.5rem ;
+}
+.category-info2 .infom .span1{
+  color:  gold;
+  text-transform: capitalize;
+  font-size:  1.29rem; ;
+}
+.category-info2 .infom .a2 i {
+  margin: 10px 0 ;
+  color: gold;
+  width: 150px;
+  padding: 5px;
+  border-radius: 100px;
+  font-size: 1.7rem;
+  transition: 0.1s ease-in;
+  text-align: center;
+  border: solid 3px gold ;
+
+
+}
+.category-info2 .infom .a2 i:hover{
+  transform: translateY(-30%);
+  background-color: gold;
+  color: black;
+  box-shadow: 0 0 7px white;
+}
+#takewando-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.imginfo2{
+  position: relative;
+}
+.imginfo2 img{
+  position: relative;
+  top: -61px;
+}
+.imginfo2::before{
+  content: '◢';
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform:translateX(-50%);
+  font-size: 35rem;
+  font-weight: 400;
+  line-height: 20rem;
+  color: gold;
+  text-shadow: 0 0 10px gold;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+  
+}
+#takewando-info .infom{
+  color: white;
+}
+#kickboxing-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+}
+#kickboxing-info .infom{
+  color: white;
+}
+#kickboxing-info img{
+  position: relative;
+  top: -24px;
+}
+
+
+
+
